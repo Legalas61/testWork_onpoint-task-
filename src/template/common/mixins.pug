@@ -1,0 +1,15 @@
+mixin target(title, className)
+	.target(class=`target_${className}`)
+		.target__title= title
+		.target__circles
+			.target__circle.target__circle_first
+			.target__circle.target__circle_second
+
+mixin slide(slideNumber, prefix)
+	.slider__container(class=`${prefix}-slide`)
+		.slider__ice
+			.slider__ice-item(class=`${prefix}-slide__ice ${prefix}-slide__ice_1`)
+			.slider__ice-item(class=`${prefix}-slide__ice ${prefix}-slide__ice_2`)
+			.slider__ice-item(class=`${prefix}-slide__ice ${prefix}-slide__ice_3`)
+
+		.slider__content(class=`slider__content_${slideNumber}`)

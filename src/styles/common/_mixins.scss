@@ -1,0 +1,14 @@
+@mixin align($axis: 'XY') {
+  position: absolute;
+  @if ($axis == "XY" or $axis == 'YX') {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($axis == "X") {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if ($axis == "Y") {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

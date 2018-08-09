@@ -1,0 +1,43 @@
+.slide-section {
+  height: 100vh;
+  min-width: 1024px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50%;
+  position: relative;
+  overflow: hidden;
+
+  &__parallax {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1.5s;
+  }
+
+  &__title {
+    font-family: 'Gotham Pro', 'Arial', sans-serif;
+    font-size: 50px;
+    color: $font-white-color;
+    &_blue {
+      color: $font-blue-color;
+      line-height: 1.2;
+    }
+    &_light {
+      padding-top: 243px;
+      line-height: 1.2;
+      text-align: center;
+      font-family: 'Gotham Pro Light', 'Arial', sans-serif;
+      font-weight: 300;
+    }
+  }
+
+  &_1 {
+    padding: 132px 70px 0;
+  }
+
+  @for $i from 1 through 3 {
+    &_#{$i} {
+      background-image: url('../images/section_#{$i}.jpg');
+    }
+  }
+}

@@ -1,0 +1,45 @@
+//gotham pro light
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('../fonts/subset-GothamPro-Light.eot');
+  src: url('../fonts/subset-GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-GothamPro-Light.woff2') format('woff2'),
+  url('../fonts/subset-GothamPro-Light.woff') format('woff'),
+  url('../fonts/subset-GothamPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//gotham pro regular
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/subset-GothamPro.eot');
+  src: url('../fonts/subset-GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-GothamPro.woff2') format('woff2'),
+  url('../fonts/subset-GothamPro.woff') format('woff'),
+  url('../fonts/subset-GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Medium';
+  src: url('../fonts/lato-medium-webfont.eot');
+  src: url('../fonts/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+  url('../fonts/lato-medium-webfont.woff') format('woff'),
+  url('../fonts/lato-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-regular-webfont.eot');
+  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato-regular-webfont.woff') format('woff'),
+  url('../fonts/lato-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

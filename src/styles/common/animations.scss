@@ -1,0 +1,25 @@
+@keyframes target-animation {
+  $to: 20;
+
+  @for $i from 0 through $to {
+    $perc: $i / $to * 100;
+
+    #{$perc}% {
+      @if ($perc == 0) {
+        transform: scale(0.33);
+      }
+      @else if ($perc >= 70 and $perc < 80) {
+        transform: scale(1);
+      }
+
+      $alpha: 0.22 + (0.78/$to * ($to - $i));
+      $offset-yellow: 65/$to * $i;
+      $offset-red: 65 + (35/$to * ($to - $i));
+      background-image: radial-gradient(circle at center,
+              rgba($target-bg, $alpha) 0%,
+              rgba($target-bg, $alpha) #{$offset-yellow * 1%},
+              rgba($target-border, 1) #{$offset-red * 1%},
+              rgba($target-border, 1) 100%);
+    }
+  }
+}

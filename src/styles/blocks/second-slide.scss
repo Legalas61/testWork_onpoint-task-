@@ -1,0 +1,30 @@
+.second-slide {
+  &__ice {
+    &_1 {
+      width: 106px;
+      height: 101px;
+      top: 239px;
+      left: 46px;
+    }
+
+    &_2 {
+      width: 38px;
+      height: 38px;
+      top: 94px;
+      left: 473px;
+    }
+
+    &_3 {
+      width: 216px;
+      height: 199px;
+      left: 899px;
+      bottom: 6px;
+    }
+
+    @for $i from 1 through 3 {
+      &_#{$i} {
+        background-image: url('../images/second-slide-ice-#{$i}.png');
+      }
+    }
+  }
+}

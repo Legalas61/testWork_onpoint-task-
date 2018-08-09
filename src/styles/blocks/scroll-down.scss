@@ -1,0 +1,22 @@
+.scroll-down {
+  @include align('X');
+  bottom: 20px;
+  &__label {
+    font-size: 15px;
+    font-family: 'Gotham Pro', 'Arial', sans-serif;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+  
+  &__arrow {
+    margin: 0 auto;
+    width: 41px;
+    height: 20px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+include common/variables
+include common/mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+
+		title Onpoint test
+
+		link(rel='stylesheet' href='./css/styles.css')
+		script(src='./js/bundle.js' defer)
+
+body
+	.wrapper
+		main.main
+			include sections/slide_1
+			include sections/slide_2
+			include sections/slide_3
+
+	include blocks/pagination

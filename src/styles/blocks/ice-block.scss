@@ -1,0 +1,47 @@
+.ice-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__item {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &_1 {
+      width: 41px;
+      height: 38px;
+      top: 161px;
+      left: 82px;
+    }
+
+    &_2 {
+      width: 147px;
+      height: 205px;
+      top: 32px;
+      right: 0;
+    }
+
+    &_3 {
+      width: 103px;
+      height: 101px;
+      left: 232px;
+      top: 443px;
+    }
+
+    &_4 {
+      width: 75px;
+      height: 76px;
+      top: 588px;
+      left: 710px;
+    }
+
+    @for $i from 1 through 4 {
+      &_#{$i} {
+        background-image: url('../images/ice-block-#{$i}.png');
+      }
+    }
+  }
+}
